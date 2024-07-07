@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Kernel
+      debug: msg="{{ ansible_kernel }}"
+    - name: Kernel
+      debug: msg="{{ ansible_hostname }}"
+    - name: Kernel
+      debug: msg="{{ ansible_distribution }}"
